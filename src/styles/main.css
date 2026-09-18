@@ -1,0 +1,222 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --text: #e8eaf0;
+  --accent: #5aa9ff;
+  --gold: #ffd54a;
+  --gems: #a78bfa;
+  --danger: #ff6b6b;
+  --success: #2ecc71;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.header,
+.footer {
+  background: var(--panel);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222632;
+}
+
+.footer {
+  border-top: 1px solid #222632;
+  border-bottom: none;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.header__title {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.header__resources {
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.resource {
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: #1f2430;
+}
+
+#gold {
+  color: var(--gold);
+}
+#gems {
+  color: var(--gems);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.stage-section,
+.heroes-section,
+.log-section {
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 0.9rem;
+  border: 1px solid #222632;
+}
+
+.stage-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 160px;
+  background: #0b0d12;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.stage-view__party,
+.stage-view__enemies {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.hero-sprite,
+.enemy-sprite {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  background: #11141c;
+  border: 1px solid #2a2f3d;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  text-align: center;
+  color: #9aa3b2;
+}
+
+.stage-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  background: #1f2430;
+  color: var(--text);
+  border: 1px solid #2a2f3d;
+  padding: 0.45rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition:
+    transform 0.06s ease,
+    background 0.12s ease;
+}
+
+.btn:hover {
+  background: #262c3a;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.heroes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.6rem;
+}
+
+.hero-card {
+  background: #0f1218;
+  border: 1px solid #222632;
+  border-radius: 8px;
+  padding: 0.55rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.hero-card__name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.hero-card__stats {
+  font-size: 0.78rem;
+  color: #9aa3b2;
+}
+
+.hero-card__actions {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.hero-card__actions .btn {
+  font-size: 0.75rem;
+  padding: 0.28rem 0.5rem;
+}
+
+.battle-log {
+  height: 180px;
+  overflow: auto;
+  background: #0b0d12;
+  border: 1px solid #222632;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+}
+
+.log-entry {
+  margin-bottom: 0.25rem;
+  opacity: 0.9;
+}
+
+.log-entry--damage {
+  color: #ff9f9f;
+}
+.log-entry--heal {
+  color: #9fffd1;
+}
+.log-entry--kill {
+  color: #ffd28f;
+}

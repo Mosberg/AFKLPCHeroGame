@@ -13,14 +13,45 @@
     <title>AFK LPC Hero Game</title>
 
     <link rel="icon" href="src/assets/lpc_2.webp" type="image/x-icon" />
-
     <link rel="stylesheet" href="src/styles/main.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+      <div class="header__title">AFK LPC Hero Game</div>
+      <div class="header__resources">
+        <span class="resource">Gold: <span id="gold">0</span></span>
+        <span class="resource">Gems: <span id="gems">0</span></span>
+      </div>
+    </header>
 
-    <script src="src/scripts/main.js"></script>
+    <main class="main">
+      <section class="stage-section">
+        <h2 class="section-title">Stage</h2>
+        <div class="stage-view" id="stageView">
+          <div class="stage-view__party" id="partyView"></div>
+          <div class="stage-view__enemies" id="enemiesView"></div>
+        </div>
+        <div class="stage-controls">
+          <button id="btnNextStage" class="btn">Next Stage</button>
+          <button id="btnAutoBattle" class="btn">Toggle Auto</button>
+        </div>
+      </section>
+
+      <section class="heroes-section">
+        <h2 class="section-title">Heroes</h2>
+        <div class="heroes-list" id="heroesList"></div>
+      </section>
+
+      <section class="log-section">
+        <h2 class="section-title">Battle Log</h2>
+        <div class="battle-log" id="battleLog"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__text">Built with LPC assets • Mosberg</div>
+    </footer>
+
+    <script type="module" src="src/scripts/main.js"></script>
   </body>
 </html>

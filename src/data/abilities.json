@@ -1,0 +1,30 @@
+[
+  {
+    "id": "basic_attack",
+    "name": "Basic Attack",
+    "type": "damage",
+    "power": 1.0,
+    "cooldown": 0
+  },
+  {
+    "id": "fireball",
+    "name": "Fireball",
+    "type": "damage",
+    "power": 1.8,
+    "cooldown": 3
+  },
+  {
+    "id": "heal",
+    "name": "Heal",
+    "type": "heal",
+    "power": 0.6,
+    "cooldown": 4
+  },
+  {
+    "id": "shield",
+    "name": "Shield",
+    "type": "buff",
+    "power": 0.4,
+    "cooldown": 5
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "knight",
+    "name": "Knight",
+    "baseHp": 120,
+    "baseAtk": 18,
+    "baseDef": 8,
+    "speed": 5,
+    "abilities": ["basic_attack", "shield"],
+    "sprite": "src/assets/heroes/knight_idle.png"
+  },
+  {
+    "id": "mage",
+    "name": "Mage",
+    "baseHp": 80,
+    "baseAtk": 28,
+    "baseDef": 4,
+    "speed": 7,
+    "abilities": ["basic_attack", "fireball"],
+    "sprite": "src/assets/heroes/mage_idle.png"
+  },
+  {
+    "id": "cleric",
+    "name": "Cleric",
+    "baseHp": 90,
+    "baseAtk": 14,
+    "baseDef": 6,
+    "speed": 6,
+    "abilities": ["basic_attack", "heal"],
+    "sprite": "src/assets/heroes/cleric_idle.png"
+  }
+]

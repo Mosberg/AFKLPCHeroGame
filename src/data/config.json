@@ -1,0 +1,6 @@
+{
+  "tickMs": 1000,
+  "offlineMaxHours": 24,
+  "goldPerStage": 50,
+  "gemDropChance": 0.05
+}
