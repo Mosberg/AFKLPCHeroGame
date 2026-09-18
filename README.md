@@ -1,5 +1,7 @@
 # AFK LPC Hero Game
 
+[AFK LPC Hero Game](https://github.com/Mosberg/AFKLPCHeroGame)
+
 **AFK LPC Hero Game** is a 2D side‑scrolling idle RPG where you collect and upgrade heroes who automatically battle enemies. Each hero has unique abilities and skills, and progression continues even while you’re offline.
 
 The game is built around the [Universal LPC Spritesheet Character Generator](https://github.com/liberatedpixelcup/Universal-LPC-Spritesheet-Character-Generator) and its web version ([Character Generator](https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/)). Use these tools and assets to generate, customize, and export hero sprites, then import them as heroes, equipment variants, enemies, and other 2D game assets.
